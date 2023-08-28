@@ -6,17 +6,14 @@ import {
   Get,
   Param,
   Delete,
-  UsePipes,
   Logger,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { BankingService } from './banking.service';
 import { BankCard } from './bank-card.entity';
 import { LinkBankCardDto } from './dto/link-bank-card.dto';
-import { LinkBankCardValidationPipe } from './pipes/link-bank-card-validation.pipe';
-import { VerifiedGuard } from 'src/auth/verified.guard';
-import { User } from 'src/auth/user.entity';
-import { GetUser } from 'src/auth/get-user-decorator';
+import { User } from '../auth/user.entity';
+import { GetUser } from '../auth/get-user-decorator';
 
 @Controller('banking')
 @UseGuards(AuthGuard())

@@ -1,10 +1,9 @@
 import { Injectable, Logger, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { PlaidService } from '../plaid/plaid.service';
 import { BankCard } from './bank-card.entity';
 import { BankCardRepository } from './bank-card.repository';
 import { User } from '../auth/user.entity'; // Import the User entity
-import { UsersRepository } from 'src/auth/user.repository';
+import { UsersRepository } from '../auth/user.repository';
 import { LinkBankCardDto } from './dto/link-bank-card.dto';
 
 @Injectable()

@@ -4,7 +4,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { BlogsRepository } from './blogs.repository';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Blog } from './blog.entity';
-import { User } from 'src/auth/user.entity';
+import { User } from '../auth/user.entity';
 import { UpdateBlogDto } from './dto/update-blog.dto';
 
 @Injectable()

@@ -1,6 +1,6 @@
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
 import { Observable } from 'rxjs';
-import { AuthenticatedRequest } from 'src/plaid/authenticated-request.interface';
+import { AuthenticatedRequest } from '../plaid/authenticated-request.interface';
 
 @Injectable()
 export class VerifiedGuard implements CanActivate {

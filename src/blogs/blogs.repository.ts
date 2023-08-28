@@ -1,5 +1,5 @@
 import { EntityRepository, Repository } from 'typeorm';
-import { User } from 'src/auth/user.entity';
+import { User } from '../auth/user.entity';
 import { InternalServerErrorException, Logger } from '@nestjs/common';
 import { Blog } from './blog.entity';
 import { GetBlogsFilterDto } from './dto/get-blogs-filter.dto';

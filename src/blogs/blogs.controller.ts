@@ -14,8 +14,8 @@ import {
   Query,
   UseGuards,
 } from '@nestjs/common';
-import { GetUser } from 'src/auth/get-user-decorator';
-import { User } from 'src/auth/user.entity';
+import { GetUser } from '../auth/get-user-decorator';
+import { User } from '../auth/user.entity';
 import { Logger } from '@nestjs/common';
 import { UpdateBlogDto } from './dto/update-blog.dto';
 

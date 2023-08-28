@@ -18,20 +18,13 @@ import { PlaidService } from './plaid.service';
 import { BankingService } from '../banking/banking.service';
 import { ExchangePublicTokenDto } from './dto/exchange-public-token.dto';
 import { AuthenticatedRequest } from './authenticated-request.interface';
-import { GetUser } from 'src/auth/get-user-decorator';
-import { User } from 'src/auth/user.entity';
+import { GetUser } from '../auth/get-user-decorator';
+import { User } from '../auth/user.entity';
 import {
   AccountsGetResponse,
   AuthGetResponse,
-  IdentityGetResponse,
-  ItemPublicTokenExchangeResponse,
   LinkTokenCreateResponse,
-  PlaidErrorType,
-  Transaction,
 } from 'plaid';
-import { CreateSandboxPublicTokenDto } from './dto/create-sandbox-public-token.dto';
-import { GetBankCard } from '../banking/get-bank-card-decorator'; // Import the decorator
-import { BankCard } from 'src/banking/bank-card.entity';
 
 @Controller('plaid')
 export class PlaidController {

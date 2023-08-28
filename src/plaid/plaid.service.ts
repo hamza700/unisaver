@@ -26,12 +26,8 @@ import {
   ItemGetResponse,
   IdentityGetResponse,
 } from 'plaid';
-import { GetUser } from 'src/auth/get-user-decorator';
-import { User } from 'src/auth/user.entity';
-import { CreateSandboxPublicTokenDto } from './dto/create-sandbox-public-token.dto';
-import { ExchangePublicTokenDto } from './dto/exchange-public-token.dto';
-import { GetBankCard } from 'src/banking/get-bank-card-decorator';
-import { BankCard } from 'src/banking/bank-card.entity';
+import { GetUser } from '../auth/get-user-decorator';
+import { User } from '../auth/user.entity';
 
 @Injectable()
 export class PlaidService {

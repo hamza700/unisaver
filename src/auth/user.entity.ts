@@ -1,5 +1,5 @@
-import { BankCard } from 'src/banking/bank-card.entity';
-import { Blog } from 'src/blogs/blog.entity';
+import { BankCard } from '../banking/bank-card.entity';
+import { Blog } from '../blogs/blog.entity';
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
