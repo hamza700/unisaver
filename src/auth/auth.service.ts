@@ -98,8 +98,6 @@ export class AuthService {
     user.password = hashedPassword;
     user.resetCode = null;
     await this.userRepository.save(user);
-
-    // You might want to handle additional error cases (e.g., saving errors) and provide appropriate responses
   }
 
   async delete(id: string): Promise<void> {

@@ -1,4 +1,5 @@
 .env.stage.dev
+.env.stage.prod
 
 # compiled output
 /dist

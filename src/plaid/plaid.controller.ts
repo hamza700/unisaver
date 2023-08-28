@@ -121,22 +121,4 @@ export class PlaidController {
     this.logger.verbose(`Identity ${identity} retrieved for user ${user.id} `);
     return { identity: identity.data.accounts };
   }
-  // @Post('/exchange_token')
-  // @UseGuards(AuthGuard('jwt'))
-  // async exchangePublicToken(
-  //   @Body() exchangePublicTokenDto: ExchangePublicTokenDto,
-  //   // @Body() publicToken: string,
-  // ): Promise<any> {
-  //   const { publicToken } = exchangePublicTokenDto;
-
-  //   const response = await this.plaidService.exchangePublicToken(publicToken);
-  //   const accessToken = response.access_token;
-  //   const itemId = response.item_id;
-
-  //   this.logger.verbose(
-  //     `Access token created ${accessToken} and ItemId created ${itemId} `,
-  //   );
-
-  //   return response;
-  // }
 }

@@ -55,15 +55,4 @@ export class BankingController {
   async deleteBankCard(@Param('id') id: string): Promise<void> {
     await this.bankingService.deleteBankCard(id);
   }
-
-  // @Get(':id/transactions')
-  // async getBankCardTransactions(
-  //   @Param('id') id: number,
-  // ): Promise<plaid.TransactionsResponse> {
-  //   const bankCard = await this.bankingService.GetBankCardById(id);
-  //   return this.bankingService.GetBankCardTransactions(
-  //     bankCard.accessToken,
-  //     bankCard.accountId,
-  //   );
-  // }
 }

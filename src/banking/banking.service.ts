@@ -45,21 +45,4 @@ export class BankingService {
   async getBankCards(user: User): Promise<BankCard[]> {
     return this.bankCardRepository.find({ user });
   }
-
-  // async GetBankCardTransactions(
-  //   accessToken: string,
-  //   accountId: string,
-  // ): Promise<plaid.TransactionsResponse> {
-  //   // Fetch transactions using Plaid API
-  //   const startDate = new Date(
-  //     new Date().setMonth(new Date().getMonth() - 1),
-  //   ).toISOString();
-  //   const endDate = new Date().toISOString();
-  //   return this.plaidService.getTransactions(
-  //     accessToken,
-  //     accountId,
-  //     startDate,
-  //     endDate,
-  //   );
-  // }
 }
